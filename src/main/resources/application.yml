@@ -1,0 +1,10 @@
+quarkus:
+  application:
+    name: quarkus-demo
+
+  http:
+    port: 9527
+
+  datasource:
+    jdbc:
+      validation-query-sql: select 1 from dual
