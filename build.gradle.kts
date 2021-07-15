@@ -5,19 +5,23 @@ plugins {
 }
 
 // aliyun 镜像有点问题，有依赖找不到
-allprojects {
-    repositories {
-        maven {
-            setUrl("https://maven.aliyun.com/repository/public")
-        }
-        maven {
-            setUrl("https://maven.aliyun.com/repository/spring")
-        }
-        maven {
-            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
-        }
-        mavenCentral()
-    }
+//allprojects {
+//    repositories {
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/public")
+//        }
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/spring")
+//        }
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
+//        }
+//        mavenCentral()
+//    }
+//}
+
+repositories {
+    mavenCentral()
 }
 
 val quarkusPlatformGroupId: String by project
