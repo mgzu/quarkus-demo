@@ -14,6 +14,7 @@ public class TestController {
 
     @GetMapping
     public String test() {
-        return "hello java 17";
+        return """
+                hello java 17""";
     }
 }
