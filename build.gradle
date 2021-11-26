@@ -1,26 +1,26 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version "1.6.0-RC2"
-    id "org.jetbrains.kotlin.plugin.allopen" version "1.6.0-RC2"
+    id 'org.jetbrains.kotlin.jvm' version "1.6.0"
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.6.0"
     id 'java'
     id 'io.quarkus'
 }
 
 // aliyun 镜像有点问题，有依赖找不到
-allprojects {
-    repositories {
-        maven {
-            setUrl("https://maven.aliyun.com/repository/public")
-        }
-        maven {
-            setUrl("https://maven.aliyun.com/repository/spring")
-        }
-        maven {
-            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
-        }
-        mavenCentral()
-        mavenLocal()
-    }
-}
+//allprojects {
+//    repositories {
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/public")
+//        }
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/spring")
+//        }
+//        maven {
+//            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
+//        }
+//        mavenCentral()
+//        mavenLocal()
+//    }
+//}
 
 repositories {
     mavenCentral()
@@ -38,6 +38,7 @@ dependencies {
     implementation 'io.quarkus:quarkus-spring-data-jpa'
     implementation 'io.quarkus:quarkus-spring-boot-properties'
     implementation 'io.quarkus:quarkus-jdbc-postgresql'
+    implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     implementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
