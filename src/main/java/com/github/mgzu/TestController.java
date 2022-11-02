@@ -18,4 +18,10 @@ public class TestController {
         return """
                 hello java 17""";
     }
+
+    @GetMapping("/{name}")
+    public String testForPathVariable(@PathVariable String name) {
+        return """
+                hello java 17""";
+    }
 }
