@@ -6,28 +6,23 @@ plugins {
 }
 
 // aliyun 镜像有点问题，有依赖找不到
-//allprojects {
-//    repositories {
+allprojects {
+    repositories {
 //        maven {
-//            setUrl("https://maven.aliyun.com/repository/central")
+//            url "https://maven.aliyun.com/repository/central"
 //        }
 //        maven {
-//            setUrl("https://maven.aliyun.com/repository/public")
+//            url "https://maven.aliyun.com/repository/public"
 //        }
 //        maven {
-//            setUrl("https://maven.aliyun.com/repository/spring")
+//            url "https://maven.aliyun.com/repository/spring"
 //        }
 //        maven {
-//            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
+//            url "https://maven.aliyun.com/repository/gradle-plugin"
 //        }
-//        mavenCentral()
-//        mavenLocal()
-//    }
-//}
-
-repositories {
-    mavenCentral()
-    mavenLocal()
+        mavenCentral()
+        mavenLocal()
+    }
 }
 
 dependencies {
