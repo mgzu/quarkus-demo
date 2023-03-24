@@ -6,21 +6,24 @@ plugins {
 }
 
 // aliyun 镜像有点问题，有依赖找不到
-//allprojects {
-//    repositories {
-//        maven {
-//            setUrl("https://maven.aliyun.com/repository/public")
-//        }
-//        maven {
-//            setUrl("https://maven.aliyun.com/repository/spring")
-//        }
-//        maven {
-//            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
-//        }
-//        mavenCentral()
-//        mavenLocal()
-//    }
-//}
+allprojects {
+    repositories {
+        maven {
+            setUrl("https://maven.aliyun.com/repository/central")
+        }
+        maven {
+            setUrl("https://maven.aliyun.com/repository/public")
+        }
+        maven {
+            setUrl("https://maven.aliyun.com/repository/spring")
+        }
+        maven {
+            setUrl("https://maven.aliyun.com/repository/gradle-plugin")
+        }
+        mavenCentral()
+        mavenLocal()
+    }
+}
 
 repositories {
     mavenCentral()
@@ -36,7 +39,7 @@ dependencies {
     implementation 'io.quarkus:quarkus-spring-web'
     implementation 'io.quarkus:quarkus-spring-data-jpa'
     implementation 'io.quarkus:quarkus-spring-boot-properties'
-    implementation 'io.quarkus:quarkus-jdbc-postgresql'
+    implementation 'io.quarkus:quarkus-jdbc-h2'
     implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'io.quarkus:quarkus-arc'
     implementation 'io.quarkus:quarkus-kotlin'

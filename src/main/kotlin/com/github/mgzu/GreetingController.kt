@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 class GreetingController {
 
     @GetMapping
-    fun hello() = "Hello Spring"
+    fun hello() = "Hello Spring and Kotlin, powered by Quarkus"
 
     @GetMapping("/{name}")
     fun testForPathVariable(@PathVariable name: String) = """
-                hello java 17, $name
+                Hello Kotlin and Java 17, $name
                 """
 }

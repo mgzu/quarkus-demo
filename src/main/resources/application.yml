@@ -7,4 +7,12 @@ quarkus:
 
   datasource:
     jdbc:
-      validation-query-sql: select 1 from dual
+      validation-query-sql: select 1
+      url: jdbc:h2:~/test_db
+    username: quarkus
+    password: quarkus
+    driver: org.h2.Driver
+
+  hibernate-orm:
+    log:
+      sql: true
