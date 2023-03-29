@@ -14,7 +14,7 @@ class GreetingControllerTest {
           .`when`().get("/greeting")
           .then()
              .statusCode(200)
-             .body(`is`("Hello Spring"))
+             .body(`is`("Hello Spring and Kotlin, powered by Quarkus"))
     }
 
 }
