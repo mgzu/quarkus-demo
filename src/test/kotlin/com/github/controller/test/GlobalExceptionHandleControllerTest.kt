@@ -18,7 +18,7 @@ class GlobalExceptionHandleControllerTest {
             .`when`().get("/exception/handle")
             .then()
             .statusCode(200)
-            .body(CoreMatchers.`is`("{\"code\":500,\"message\":\"Unknown Error\",\"data\":null}"))
+            .body(CoreMatchers.`is`("{\"code\":500,\"message\":\"Internal Server Error\",\"data\":null}"))
     }
 
 }
