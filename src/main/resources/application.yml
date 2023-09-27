@@ -6,12 +6,12 @@ quarkus:
     port: 9527
 
   datasource:
-    jdbc:
-      validation-query-sql: select 1
-      url: jdbc:h2:~/test_db
+    db-kind: h2
     username: quarkus
     password: quarkus
-    driver: org.h2.Driver
+    jdbc:
+      validation-query-sql: select 1
+      url: jdbc:h2:~/quarkus_test_db
 
   hibernate-orm:
     log:
