@@ -26,7 +26,8 @@ allprojects {
 }
 
 ext {
-    lombokVersion = "1.18.24"
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    lombokVersion = "1.18.30"
 }
 
 dependencies {
